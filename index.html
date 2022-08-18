@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body class=" bg-dark text-white">
+
+    <div class="cruds container ">
+        <!-- header site------- -->
+        <div class="head">
+            <h2 class=" text-uppercase text-center">cruds</h2>
+            <p class=" text-uppercase text-center">product management system</p>
+        </div>
+        <!--/ header site------- -->
+        <!-- inputs in site------ -->
+        <div class="inputs">
+            <!-- text---- -->
+            <input type="text" id="text" placeholder="text">
+            <!-- price----- -->
+            <div class="price">
+                <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+                <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+                <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+                <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+                <small class=" p-1 rounded-2 " id="total" ></small>
+            </div>
+            <!-- count---- -->
+            <input type="number" id="count" placeholder="count">
+            <!-- category---- -->
+            <input type="text" id="category" placeholder="category">
+
+            <button type="button" id="submit" class="btn btn-success w-100 my-3 rounded-pill">create</button>
+           
+
+        </div>
+        <!-- inputs in site------ -->
+
+        <div class="outputs">
+
+            <input onkeyup="search(this.value)" type="text" id="search" placeholder="search">
+            <div class=" d-flex justify-content-between">
+                <button onclick="searchMood(this.id)" id="searchByTitle" type="button"  class="btn btn-success w-25 my-3 rounded-pill">search by title</button>
+                <button onclick="searchMood(this.id)" id="searchByCategory" type="button"  class="btn btn-success w-25 my-3 rounded-pill">search by category</button>
+
+            </div>
+             <div id="deleteAll"></div>
+            <table class=" text-white w-100 my-3 ">
+                
+                  <tr>
+                    <th >id</th>
+                    <th >title</th>
+                    <th >price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>Total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                  </tr>
+                
+                <tbody id="tbody" >
+                
+                
+                 
+                  
+                  
+                </tbody>
+              </table> 
+        </div>
+    </div>
+
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/mine.js"></script>
+</body>
+
+</html>
