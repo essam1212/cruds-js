@@ -14,25 +14,19 @@ input{
     padding: 4px;
     color: white;
 }
-input:focus{
-    background-color: #000;
-    transform: scale(1.1);
 
-}
-.price input{
-    width: 20%;
-}
+
 small{
-    margin: 20px;
     background-color: #dc3545;
+    border-radius: 4px;
+text-align: center;
 }
 small::before{
     content: "Total: " ;
     
 }
-button{
-    
-}
+
+
 button:hover{
     letter-spacing: 2px;
     transition: 150ms;
@@ -41,6 +35,11 @@ button:hover{
 table{
 text-align: center;
 margin: 10px 0px;
+}
+.tb{
+    width: 100%;
+    overflow: auto;
+
 } 
 table th{
 text-transform: uppercase;

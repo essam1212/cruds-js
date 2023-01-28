@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="./style/bootstrap.min.css">
     <link rel="stylesheet" href="./style/style.css">
+    <title>cruds js</title>
 </head>
 
 <body class=" bg-dark text-white">
@@ -15,25 +16,26 @@
         </div>
         <!--/ header site------- -->
         <!-- inputs in site------ -->
-        <div class="inputs">
+        <div class="inputs row">
+
+            
             <!-- text---- -->
-            <input type="text" id="text" placeholder="text">
+            <input class="col-12 " type="text" id="text" placeholder="text" >
             <!-- price----- -->
-            <div class="price">
-                <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
-                <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
-                <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
-                <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
-                <small class=" p-1 rounded-2 " id="total" ></small>
-            </div>
+            
+                <input class="col-12 my-2" onkeyup="getTotal()" type="number" id="price" placeholder="price">
+                <input class="col-12  my-2" onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+                <input class="col-12 my-2" onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+                <input class="col-12  my-2" onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+                <small  class="col-12 py-2  my-2" id="total" ></small>
+            
             <!-- count---- -->
-            <input type="number" id="count" placeholder="count">
+            <input class="col-12 my-2"  type="number" id="count" placeholder="count">
             <!-- category---- -->
-            <input type="text" id="category" placeholder="category">
+            <input class="col-12 my-2"  type="text" id="category" placeholder="category">
 
-            <button type="button" id="submit" class="btn btn-success w-100 my-3 rounded-pill">create</button>
+            <button  type="button" id="submit" class="btn btn-success w-100 my-3 rounded-pill">create</button>
            
-
         </div>
         <!-- inputs in site------ -->
 
@@ -46,29 +48,26 @@
 
             </div>
              <div id="deleteAll"></div>
-            <table class=" text-white w-100 my-3 ">
+             <div class=" row tb">
+            <table class=" text-white w-100 my-3  col-12">
                 
                   <tr>
-                    <th >id</th>
-                    <th >title</th>
-                    <th >price</th>
-                    <th>taxes</th>
-                    <th>ads</th>
-                    <th>discount</th>
-                    <th>Total</th>
-                    <th>category</th>
-                    <th>update</th>
-                    <th>delete</th>
+                    <th  class="px-4">id</th>
+                    <th class="px-4">title</th>
+                    <th class="px-4">price</th>
+                    <th class="px-4">taxes</th>
+                    <th class="px-4">ads</th>
+                    <th class="px-4">discount</th>
+                    <th class="px-4">Total</th>
+                    <th class="px-4">category</th>
+                    <th class="px-4">update</th>
+                    <th class="px-4">delete</th>
                   </tr>
                 
-                <tbody id="tbody" >
-                
-                
-                 
-                  
-                  
-                </tbody>
-              </table> 
+                <tbody id="tbody" > </tbody>
+             
+            </table>
+        </div> 
         </div>
     </div>
 
